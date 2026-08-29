@@ -15,7 +15,7 @@ curl -Lo /etc/yum.repos.d/terra.repo https://github.com/terrapkg/subatomic-repos
 sed -i 's/$releasever/40/g' /etc/yum.repos.d/terra.repo
 
 # --- Noctalia (from Terra repo) ---
-dnf5 install -y noctalia-shell
+dnf5 install -y noctalia
 
 # --- Optional dependencies / tools ---
 dnf5 install -y \
