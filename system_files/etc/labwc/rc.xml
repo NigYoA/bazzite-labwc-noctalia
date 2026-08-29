@@ -1,0 +1,27 @@
+<labwc>
+  <theme>
+    <name>Adwaita</name>
+  </theme>
+  <keyboard>
+    <keybind key="C-A-Return">
+      <action name="Spawn">ghostty</action>
+    </keybind>
+    <keybind key="C-A-d">
+      <action name="Spawn">bemenu --action labwc-action</action>
+    </keybind>
+    <keybind key="C-A-q">
+      <action name="Exit"/>
+    </keybind>
+  </keyboard>
+  <views>
+    <placement policy="under_mouse"/>
+  </views>
+  <programs>
+    <program name="noctalia-shell"/>
+  </programs>
+  <rules>
+    <rule name="Noctalia">
+      <action name="Execute">noctalia-shell</action>
+    </rule>
+  </rules>
+</labwc>

@@ -1,0 +1,8 @@
+*.rpm
+.cosign/
+copr/
+# Secret keys
+cosign.key
+# OS files
+.DS_Store
+Thumbs.db

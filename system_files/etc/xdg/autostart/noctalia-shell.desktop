@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Noctalia
+Exec=noctalia-shell
+Comment=Tiling extension for LabWC
+X-LabWC-Autostart=true
+NoDisplay=false

@@ -1,0 +1,8 @@
+# Run this inside your repo folder to generate:
+# COSIGN_PASSWORD="" cosign generate-key-pair
+# Then add cosign.key to GitHub Secrets as SIGNING_SECRET
+# and commit cosign.pub to the repo.
+#
+# Example:
+# COSIGN_PASSWORD="" cosign generate-key-pair
+# cat cosign.pub
