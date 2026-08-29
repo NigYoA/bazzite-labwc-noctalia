@@ -28,7 +28,6 @@ dnf5 install -y \
     cava \
     playerctl \
     ddcutil \
-    ghostty \
     zsh
 
 # --- Remove bloat (optional) ---
