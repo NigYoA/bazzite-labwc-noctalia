@@ -11,7 +11,7 @@ cp -avf "/ctx/system_files"/. /
 dnf5 install -y labwc labwc-session
 
 # --- Terra repo (needed for Noctalia on Fedora < 44 or if not in main repo) ---
-dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+curl -Lo /etc/yum.repos.d/terra.repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 
 # --- Noctalia (from Terra repo) ---
 dnf5 install -y noctalia-shell
