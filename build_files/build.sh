@@ -23,7 +23,7 @@ dnf5 install -y \
     xdg-desktop-portal-gnome \
     xdg-desktop-portal-gtk \
     xwayland-satellite \
-    polkit-kde-agent \
+    polkit-kde \
     wlsunset \
     cava \
     playerctl \
