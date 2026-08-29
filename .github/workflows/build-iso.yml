@@ -38,7 +38,7 @@ jobs:
         id: build-iso
         uses: osbuild/bootc-image-builder-action@main
         with:
-          config-file: config.json
+          config-file: ${{ github.workspace }}/config.json
           image: ghcr.io/${{ env.REPO_ORGANIZATION }}/${{ env.IMAGE_NAME }}:${{ github.event.inputs.tag }}
           types: |
             iso
