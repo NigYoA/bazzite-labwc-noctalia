@@ -40,6 +40,7 @@ jobs:
         with:
           config-file: ${{ github.workspace }}/config.json
           image: ghcr.io/${{ env.REPO_ORGANIZATION }}/${{ env.IMAGE_NAME }}:${{ github.event.inputs.tag }}
+          rootfs: btrfs
           types: |
             iso
 
