@@ -12,7 +12,10 @@ dnf5 install -y labwc labwc-session
 
 # --- Terra repo (needed for Noctalia on Fedora < 44 or if not in main repo) ---
 curl -Lo /etc/yum.repos.d/terra.repo https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-sed -i 's/$releasever/40/g' /etc/yum.repos.d/terra*.repo
+sed -i 's/$releasever/40/g' /etc/yum.repos.d/terra.repo
+if [ -f /etc/yum.repos.d/terra-mesa.repo ]; then
+    sed -i 's/enabled=1/enabled=0/g' /etc/yum.repos.d/terra-mesa.repo
+fi
 
 # --- Noctalia (from Terra repo) ---
 dnf5 install -y noctalia
